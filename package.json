@@ -1,0 +1,11 @@
+{
+  "name": "kanban-task-management-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix backend install && npm --prefix backend run prisma:generate && npm --prefix backend run prisma:push && npm --prefix backend run prisma:seed && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run start:dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build"
+  }
+}
